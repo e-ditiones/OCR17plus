@@ -94,8 +94,7 @@ Claire Jahan : claire.jahan[at]chartes.psl.eu
 Simon Gabay : Simon.Gabay[at]unige.ch
 
 ## Cite this dataset
-Claire Jahan and Simon Gabay, _OCR17+ - Layout analysis and text recognition for 17th c. French prints_, 2021, Paris/Genève: ENS Paris/UniGE,  
-https://github.com/e-ditiones/OCR17plus.
+Claire Jahan and Simon Gabay, _OCR17+ - Layout analysis and text recognition for 17th c. French prints_, 2021, Paris/Genève: ENS Paris/UniGE, https://github.com/e-ditiones/OCR17plus.
 
 ## Licence
 Data is CC-BY, except images which come from Gallica 
