@@ -60,7 +60,7 @@ The structure of the repo is the following:
 └── README.md
 ```
 
-The ``Data`` directory contains excerpts of 17<sup>th</sup> century books, _i.e._ scans of selected pages and their encoding in
+The [``Data``](https://github.com/e-ditiones/OCR17plus/tree/main/Data) directory contains excerpts of 17<sup>th</sup> century books, _i.e._ scans of selected pages and their encoding in
 1. PageXML
 2. ALTO-4 files.
 Regarding the difference between all these directories, cf. _infra_, <a href="#data-description">§ Data description<a/>.
