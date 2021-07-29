@@ -84,7 +84,7 @@ with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted f
 3. The version exported from eScriptorium (`alto4eScriptorium`)
 
 <p align="center">
-  <img src="img/general_flowchart.png" width="800"/>
+  <img src="img/general_flowchart.png" width="400"/>
 </p>
 
 ## Contacts
@@ -93,8 +93,8 @@ Claire Jahan : claire.jahan[at]chartes.psl.eu
 Simon Gabay : Simon.Gabay[at]unige.ch
 
 ## Cite this dataset
-Claire Jahan and Simon Gabay, _17<sup>th</sup> century printed books (ALTO, PAGE-XML and png)_, 2021, Paris: ENS Paris,  
-https://github.com/Heresta/datasetsOCRSegmenter17.
+Claire Jahan and Simon Gabay, _OCR17+ - Layout analysis and text recognition for 17th c. French prints_, 2021, Paris/Genève: ENS Paris/UniGE,  
+https://github.com/e-ditiones/OCR17plus.
 
 ## Licence
 Data is CC-BY, except images which come from Gallica 
