@@ -2,7 +2,7 @@
 
 HTR models have to be used with [Kraken](https://github.com/mittagessen/kraken).
 
-We now used the same test set, available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt), t compare the efficiency of the different models.
+Except for preliminary experimentations (`bleu.mlmodel`), we use the same test set, available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt), to compare the efficiency of the different models.
 
 Models are named after cheeses, following an alphabetical order.
 
@@ -10,19 +10,20 @@ Models are named after cheeses, following an alphabetical order.
 
 ### Production
 
-This model was produced thanks to release 1.0 of this dataset 
-([here for more information](https://github.com/Heresta/OCR17plus/releases/tag/1.0)). 
-It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created thanks to 
-Simon Gabay's script ([here](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py)).
+This model was produced thanks to the [release 1.0](https://github.com/Heresta/OCR17plus/releases/tag/1.0)). 
+It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set), created with the [following script](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py).
+1. `train` contained 82.76% of total dataset.
+2. `val` contained 7.61% of total dataset.
+3. `test` contained 9.62% of total dataset.
 
-`train` contained 82.76% of total dataset. `val` contained 7.61% of total dataset. `test` contained 9.62% of total dataset.
-
-[Kraken](https://kraken.re/) was used thanks to line command `ketos train -t train.txt -e val.txt -u NFKD -f alto`
-for training, then `ketos test -m model -f alto -e test.txt` to test it.
+Command used is:
+* `ketos train -t train.txt -e val.txt -u NFKD -f alto` for training
+* `ketos test -m model -f alto -e test.txt` for testing
 
 ### Results
-
-This model has 96% accuracy, according to training part, but only 91% according to test part.
+Accuracy is:
+* 96% on the evaluation set
+* 91% on the test set.
 
 ## `cheddar.mlmodel`
 
