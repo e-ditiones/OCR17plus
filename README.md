@@ -88,7 +88,11 @@ with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted f
   <img src="img/general_flowchart.png" width="400"/>
 </p>
 
-## Contacts
+## Credits
+
+Data prepared and models trained by Claire Jahan with the help of Simon Gabay, as part of the [_E-ditiones_](https://github.com/e-ditiones) project.
+  
+## Contact
 Claire Jahan : claire.jahan[at]chartes.psl.eu
 
 Simon Gabay : Simon.Gabay[at]unige.ch
