@@ -29,34 +29,33 @@ Accuracy is:
 
 ### Production
 
-This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and
-`test` (test set). Those were created with 
-[`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py), written thanks to Simon Gabay's script 
-([here](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py)). It uses a prepared test set 
-([here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt)).
+This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt).
+1. `train` contained 75% of total dataset.
+2. `val` contained 10% of total dataset.
+3. `test` contained 15% of total dataset.
 
-`train` contained 75% of total dataset. `val` contained 10% of total dataset. `test` contained 15% of total dataset.
-
-[Kraken](https://kraken.re/) was used thanks to line command `ketos train -t train.txt -e val.txt -f alto -d cuda --normalization NFD` 
-for training, then `ketos test -m model -f alto -e test.txt` to test it.
+Commands used are:
+* `ketos train -t train.txt -e val.txt -f alto -d cuda --normalization NFD` for training
+* `ketos test -m model -f alto -e test.txt` for testing
 
 ### Results
-This model has 96.3% accuracy, according to training part.
+Accuracy is:
+* 96.3% on the evaluation set
 
 ## `dentduchat.mlmodel`
 
 ### Production
 
-This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and
-`test` (test set). Those were created with 
-[`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py), written thanks to Simon Gabay's script
-([here](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py)). It uses a prepared test set 
-([here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt)).
+This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt).
+1. `train` contained 75% of total dataset.
+2. `val` contained 10% of total dataset.
+3. `test` contained 15% of total dataset.
 
-`train` contained 75% of total dataset. `val` contained 10% of total dataset. `test` contained 15% of total dataset.
 
-[Kraken](https://kraken.re/) was used thanks to line command `ketos train -t train.txt -e val.txt -f alto -d cuda --normalization NFD`
-for training, then `ketos test -m model -f alto -e test.txt` to test it.
+Commands used are:
+* `ketos train -t train.txt -e val.txt -f alto -d cuda --normalization NFD` for training
+* `ketos test -m model -f alto -e test.txt` for testing
 
 ### Results
-This model has 96.6% accuracy, according to training part.
+Accuracy is:
+* 96.6% on the evaluation set
