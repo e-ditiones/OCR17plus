@@ -16,7 +16,7 @@ It was divided in three sets : `train` (training set), `val` (evaluation set) an
 2. `val` contained 7.61% of total dataset.
 3. `test` contained 9.62% of total dataset.
 
-Command used is:
+Commands used are:
 * `ketos train -t train.txt -e val.txt -u NFKD -f alto` for training
 * `ketos test -m model -f alto -e test.txt` for testing
 
