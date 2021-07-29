@@ -63,7 +63,7 @@ The structure of the repo is the following:
 The ``Data`` directory contains excerpts of 17<sup>th</sup> century books, _i.e._ scans of selected pages and their encoding in
 1. PageXML
 2. ALTO-4 files.
-Regarding the difference between all these directories, cf. _infra_, <a href="#data-production">§ Data production<a/>.
+Regarding the difference between all these directories, cf. _infra_, <a href="#data-description">§ Data description<a/>.
 
 Prints have been selected in the [OCR17 repo](https://github.com/e-ditiones/OCR17), and are all 
 described individually in their respective folder.
@@ -71,12 +71,12 @@ described individually in their respective folder.
 The [``Models``](https://github.com/e-ditiones/OCR17plus/tree/main/Model) directory contains models for:
 1. [HTR](https://github.com/e-ditiones/OCR17plus/tree/main/Model/HTR)
 2. [Layout analysis](https://github.com/e-ditiones/OCR17plus/tree/main/Model/Segment). The layout analysis is based on the [SegmOnto](https://github.com/SegmOnto) vocabulary.
-  a. [`files_informations.csv`](https://github.com/e-ditiones/OCR17plus/blob/main/files_informations.csv) indicates in which file found specific zones.
-  b. [``parts_dataset.csv``](https://github.com/e-ditiones/OCR17plus/blob/main/parts_dataset.csv) contains the percentage of each specificity in this dataset.
+  * [`files_informations.csv`](https://github.com/e-ditiones/OCR17plus/blob/main/files_informations.csv) indicates in which file found specific zones.
+  * [``parts_dataset.csv``](https://github.com/e-ditiones/OCR17plus/blob/main/parts_dataset.csv) contains the percentage of each specificity in this dataset.
 
 Validation of the XML data pushed on the repository is made via ``segmontoAltoValidator`` and ``validator_alto.py``. They comme from [HTR-United/cremma-medieval repository](https://github.com/HTR-United/cremma-medieval).
 
-## Data production
+## Data description
 Some of used data come from the [OCR17 repo](https://github.com/e-ditiones/OCR17), the composition of which started 
 with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted for eScriptorium. Therefore, for each print exported from transkribus, we propose
 1. The exported file (`pageXmlTranskribus`)
@@ -85,102 +85,6 @@ with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted f
 
 <p align="center">
   <img src="img/general_flowchart.png" width="800"/>
-</p>
-
-## About files' segmentation
-
-### Types of zones
-
-```
-Title: 39 (1.37%)
-
-Main: 741 (26.1%)
-
-Damage: 222 (7.82%)
-
-Decoration: 207 (7.29%)
-
-DropCapital: 166 (5.85%)
-
-Margin: 45 (1.59%)
-
-Numbering: 576 (20.29%)
-
-RunningTitle: 621 (21.87%)
-
-Signatures: 199 (7.01%)
-
-Stamp: 23 (0.81%)
-```
-
-<p align="center">
-  <img src="img/division_zones_dataset.png" width="800"/>
-</p>
-
-### Type of lines
-
-```
-Default: 17963 (97.8%)
-
-DropCapitalLine: 311 (1.69%)
-
-Rubric: 93 (0.51%)
-
-```
-### Type of lines/type of zone
-```
-Title:
-
-- Default: 198
-
-Main:
-
-- Default: 16 277
-
-- DropCapitalLine: 253
-
-- Rubric: 92
-
-Damage:
-
-- Default: 2
-
-- Rubric: 1
-
-Decoration:
-
-- Default: 5
-
-DropCapital:
-
-- Default: 3
-
-- DropCapitalLine: 57
-
-Margin:
-
-- Default: 134
-
-- DropCapitalLine: 1
-
-Numbering:
-
-- Default: 528
-
-RunningTitle:
-
-- Default: 618
-
-Signatures:
-
-- Default: 196
-
-Stamp:
-
-- Default: 2
-```
-<p align="center">
-  <img src="img/division_zones_by_lines.png" width="800"/>
 </p>
 
 ## Contacts
