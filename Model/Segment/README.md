@@ -13,7 +13,11 @@ The vocabulary of the segmentation is based on [SegmOnto vocabulary](https://git
 This model was produced thanks to this dataset. Repartition between the train set and the evaluation set has been done automatically by Kraken.
 
 ### Results
-This model has 99% accuracy, according to training Kraken.
+mean intersection over union : 0.6039
+frequency weighted intersection over union: 0.873
+mean accuracy: 0.9937
+accuracy: 0.9937 
 
+### Remarks
 It was tested on an untouched document, and it gave good results, except concerning Rubric lines or DropCapitalLine, which are rare in training dataset.
 
