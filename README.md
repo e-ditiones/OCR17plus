@@ -1,8 +1,10 @@
-# OCR17+ - Layout analysis and text recognition for 17th c. French prints
+# `OCR17+` - Layout analysis and text recognition for 17th c. French prints
 
 This repo contains training data and models for Layout analysis and text recognition for 17th c. French prints
 
-<span style="color:red;">This repo is an updated version of the [OCR17 repo](https://github.com/e-ditiones/OCR17).</span>
+```diff
+- This repo is an updated version of the [OCR17 repo](https://github.com/e-ditiones/OCR17).
+```
 
 ## How to use
 
