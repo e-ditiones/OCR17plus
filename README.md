@@ -3,8 +3,10 @@
 This repo contains training data and models for Layout analysis and text recognition for 17th c. French prints
 
 ```diff
-- This repo is an updated version of the [OCR17 repo](https://github.com/e-ditiones/OCR17).
+- This repo is an updated version of the OCR17 repo. It uses XML files and not .png/.txt pairs.
 ```
+
+The old repo is still available <a href="https://github.com/e-ditiones/OCR17" target="_blank"> here</a>.
 
 ## How to use
 
@@ -57,33 +59,28 @@ The structure of the repo is the following:
 └── README.md
 ```
 
-The ``Data`` directory contains excerpts of 17<sup>th</sup> century books, _i.e._ scans of selected pages and their encoding in 
-PageXML and ALTO-4 files. Regarding the difference between all these directories, cf. _infra_, § Data production.
+The ``Data`` directory contains excerpts of 17<sup>th</sup> century books, _i.e._ scans of selected pages and their encoding in
+1. PageXML
+2. ALTO-4 files.
+Regarding the difference between all these directories, cf. _infra_, <a href="#data-production">§ Data production<a/>.
 
-The ``Models`` directory contains several trained models, three for HTR 
-(more information [here](https://github.com/Heresta/blob/main/Model/HTR/README.md)) and the second for segmentation 
-(more information [here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/Model/Segment/README.md)).
-
-* The files propose not only the transcription of the text but also an annotation of the layout using the 
-[SegmOnto](https://github.com/SegmOnto) vocabulary.
-* Some old prints have been selected in the [OCR17 repo](https://github.com/e-ditiones/OCR17), and are all 
+Prints have been selected in the [OCR17 repo](https://github.com/e-ditiones/OCR17), and are all 
 described individually in their respective folder.
+  
+The [``Models``](https://github.com/e-ditiones/OCR17plus/tree/main/Model) directory contains models for:
+1. [HTR](https://github.com/e-ditiones/OCR17plus/tree/main/Model/HTR)
+2. [Layout analysis](https://github.com/e-ditiones/OCR17plus/tree/main/Model/Segment). The layout analysis is based on the [SegmOnto](https://github.com/SegmOnto) vocabulary.
+  a. [`files_informations.csv`](https://github.com/e-ditiones/OCR17plus/blob/main/files_informations.csv) indicates in which file found specific zones.
+  b. [``parts_dataset.csv``](https://github.com/e-ditiones/OCR17plus/blob/main/parts_dataset.csv) contains the percentage of each specificity in this dataset.
 
-``build_train_alto_Seg17.sh`` is a script to create a `.png` + ALTO4 dataset from all the print.
-
-``files_informations.csv`` contains all names of dataset's files sorted depending on their main specificity.
-
-``parts_dataset.csv`` contains the percentage of each specificity in this dataset.
-
-``segmontoAltoValidator`` and ``validator_alto.py`` are two files to help to validate any xml data added in this repository thanks to a workflow
-on GitHub. They ahave been taken from [HTR-United/cremma-medieval repository](https://github.com/HTR-United/cremma-medieval).
+Validation of the XML data pushed on the repository is made via ``segmontoAltoValidator`` and ``validator_alto.py``. They comme from [HTR-United/cremma-medieval repository](https://github.com/HTR-United/cremma-medieval).
 
 ## Data production
 Some of used data come from the [OCR17 repo](https://github.com/e-ditiones/OCR17), the composition of which started 
-with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted for eScriptorium. Therefore, for each print, we propose
-1. export format (`pageXmlTranskribus`)
-2. its prepared form for eScriptorium (`pagexmlTranskribusCorrected`)
-3. the final version exported from eScriptorium (`alto4eScriptorium`)
+with [Transkribus](https://readcoop.eu/transkribus), which needs to be adapted for eScriptorium. Therefore, for each print exported from transkribus, we propose
+1. The exported file (`pageXmlTranskribus`)
+2. The exported file prepared form for eScriptorium (`pagexmlTranskribusCorrected`)
+3. The version exported from eScriptorium (`alto4eScriptorium`)
 
 <p align="center">
   <img src="img/general_flowchart.png" width="800"/>
