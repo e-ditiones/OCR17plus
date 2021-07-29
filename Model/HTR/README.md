@@ -10,8 +10,7 @@ Models are named after cheeses, following an alphabetical order.
 
 ### Production
 
-This model was produced thanks to the [release 1.0](https://github.com/Heresta/OCR17plus/releases/tag/1.0)). 
-It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set), created with the [following script](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py).
+This model was produced with the [v 1.0](https://github.com/Heresta/OCR17plus/releases/tag/1.0) of the dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set), created with the [following script](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py).
 1. `train` contained 82.76% of total dataset.
 2. `val` contained 7.61% of total dataset.
 3. `test` contained 9.62% of total dataset.
@@ -30,7 +29,7 @@ Accuracy is:
 ### Production
 
 
-This model was produced with the [2.0 version of the dataset](https://zenodo.org/record/5078165#.YQKUtY4zZPY). It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
+This model was produced with the [v. 2.0](https://zenodo.org/record/5078165#.YQKUtY4zZPY) of the dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). The first two were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). The test set is available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
 1. `train` contained 75% of total dataset.
 2. `val` contained 10% of total dataset.
 3. `test` contained 15% of total dataset.
@@ -49,7 +48,7 @@ Accuracy is:
 
 ### Production
 
-This model was produced with the [2.0 version of the dataset](https://zenodo.org/record/5078165#.YQKUtY4zZPY). It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
+This model was produced with the [v. 2.0](https://zenodo.org/record/5078165#.YQKUtY4zZPY) of the dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). The first two were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). The test set is available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
 1. `train` contained 75% of total dataset.
 2. `val` contained 10% of total dataset.
 3. `test` contained 15% of total dataset.
