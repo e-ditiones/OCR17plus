@@ -29,10 +29,13 @@ Accuracy is:
 
 ### Production
 
-This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt).
+
+This model was produced with the [2.0 version of the dataset](https://zenodo.org/record/5078165#.YQKUtY4zZPY). It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
 1. `train` contained 75% of total dataset.
 2. `val` contained 10% of total dataset.
 3. `test` contained 15% of total dataset.
+
+_Note: a problem occured during training. This model should not be used._
 
 Commands used are:
 * `ketos train -t train.txt -e val.txt -f alto -d cuda --normalization NFD` for training
@@ -46,7 +49,7 @@ Accuracy is:
 
 ### Production
 
-This model was produced thanks to this dataset. It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/Heresta/datasetsOCRSegmenter17/blob/main/test.txt).
+This model was produced with the [2.0 version of the dataset](https://zenodo.org/record/5078165#.YQKUtY4zZPY). It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created with [`train_val_prep.py`](https://github.com/e-ditiones/OCR17plus/blob/main/train_val_prep.py). It uses a prepared test set available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt).
 1. `train` contained 75% of total dataset.
 2. `val` contained 10% of total dataset.
 3. `test` contained 15% of total dataset.
