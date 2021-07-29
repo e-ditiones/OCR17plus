@@ -20,7 +20,7 @@ To train a model, all the data needs to added to a single file, prior to the rep
 2. `cd datasetsOCRSegmenter17`
 3. `bash build_train_alto_Seg17.sh` creates a `trainingDataSeg17` directory
 4. `python train_val_prep.py ./trainingDataSeg17/*.xml` creates two new files `train.txt` (with training data) and `val.txt` (validation data).
-5. If you have kraken installed, you can use `ketos segtrain -t train.txt -e val.txt  -o model -d cuda -f alto -q early -bl` to train a layout analyser
+5. If you have kraken installed, you can use `ketos segtrain -t train.txt -e val.txt  -o model -d cuda -f alto -q early -bl` to train a model for layout analysis
 
 The `test.txt` file is already prepared for the reproducibility of the test, and evaluate the improvement over time. It was created with 3 title pages, 14 pages containing damage, 2 pages with margin, 14 with decoration, 19 with rubric or signatures (or both), 1 with a running title on bottom of page, 3 pages with decorated drop capitals, 7 with basic drop capitals and 28 basic pages. This test file can also be used for an HTR training test.
 
