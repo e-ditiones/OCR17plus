@@ -1,12 +1,17 @@
 # HTR Model
-`bleu.mlmodel` and `cheddar.mlmodel` are two 17<sup>th</sup> century HTR models.
+
+HTR models have to be used with [Kraken](https://github.com/mittagessen/kraken).
+
+We now used the same test set, available [here](https://github.com/e-ditiones/OCR17plus/blob/main/test.txt), t compare the efficiency of the different models.
+
+Models are named after cheeses, following an alphabetical order.
 
 ## `bleu.mlmodel`
 
 ### Production
 
 This model was produced thanks to release 1.0 of this dataset 
-([here for more information](https://github.com/Heresta/datasetsOCRSegmenter17/releases/tag/1.0)). 
+([here for more information](https://github.com/Heresta/OCR17plus/releases/tag/1.0)). 
 It was divided in three sets : `train` (training set), `val` (evaluation set) and `test` (test set). Those were created thanks to 
 Simon Gabay's script ([here](https://github.com/gabays/Cours_2020_01_Strasbourg/blob/master/randomise_data.py)).
 
